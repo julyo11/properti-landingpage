@@ -1,8 +1,9 @@
-body{
-  font-family: Poppins, 'sans-serif';
+body {
+  font-family: Poppins, "sans-serif";
   font-size: 16px;
   height: 100vh;
 }
+
 /* 
 .navbar-nav a.nav-link.active{
   color: #83d987;
@@ -12,31 +13,27 @@ body{
   color: #83d987;
 } */
 /* Navbar Style */
-nav{
+nav {
   z-index: 999;
-  background-color: #0F1837;
+  background-color: #0f1837;
 }
 
-nav .nav-link{
-  color: #9094A2;
+nav .nav-link {
+  color: #9094a2;
   margin: auto;
   padding: 1rem 2rem;
 }
 
-nav .navbar-nav a{
+nav .navbar-nav a {
   padding: 1.5rem;
 }
 
-nav .navbar-nav{
-  padding: 0 2rem;
-}
-
-nav .navbar-nav .btn{
+nav .navbar-nav .btn {
   margin: auto;
   padding: 1rem 2rem;
 }
 
-nav .navbar-nav .btn button{
+nav .navbar-nav .btn button {
   outline: none;
   border: none;
   background-color: #83d987;
@@ -49,12 +46,12 @@ nav .navbar-nav .btn button{
   transition: all 0.4s ease;
 }
 
-nav .navbar-nav .btn button:hover{
+nav .navbar-nav .btn button:hover {
   opacity: 0.7;
 }
 
 /* Header Style */
-.header{
+.header {
   background-image: url(../img/background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,23 +59,25 @@ nav .navbar-nav .btn button:hover{
   margin-top: 0px;
 }
 
-.header .head-text h1{
+.header .head-text h1 {
   margin-top: 4.5em;
   font-size: 48px;
   color: #ffffff;
+  line-height: 145%;
 }
 
-.header .head-text p{
-  color: #9094A2;
+.header .head-text p {
+  color: #9094a2;
   margin-top: 24px;
+  line-height: 170%;
 }
 
-.header .img{
+.header .img {
   margin-top: 5em;
   margin-left: -185px;
 }
 
-.header .info{
+.header .info {
   margin-top: 64px;
   z-index: 999;
   background-color: #ffffff;
@@ -86,26 +85,26 @@ nav .navbar-nav .btn button:hover{
   padding: 8px 0;
 }
 
-.header .info .location p, 
-.header .info .type p{
+.header .info .location p,
+.header .info .type p {
   font-size: 14px;
-  color: #020B2A;
+  color: #020b2a;
   border-radius: 6px;
 }
 
 .header .info .location h5,
-.header .info .type h5{
+.header .info .type h5 {
   font-size: 16px;
   font-weight: 500;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   border-radius: 6px;
-  width: 230px;
+  width: 200px;
   height: 45px;
   color: #020b2a;
   padding: 12px;
 }
 
-.header .info .btn-explore button{
+.header .info .btn-explore button {
   border: none;
   color: #132039;
   font-size: 18px;
@@ -116,39 +115,248 @@ nav .navbar-nav .btn button:hover{
   border-radius: 6px;
   transition: all 0.5s ease;
 }
-.header .info .btn-explore button:hover{
+
+.header .info .btn-explore button:hover {
   opacity: 0.8;
 }
 
-/* Desktop LG Size */
-@media (min-width: 993px){
-  nav{
-    background: none;
-  }
-  nav .navbar-nav a{
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-  nav .navbar-nav{
-    margin-left: 1.5rem;
-  }
-  nav .navbar-nav a.active{
-    margin-left: 32px;
-  }
-  .header{
-    margin-top: -120px;
-  }
-  .header .img img{
-    width: 520px;
-    height: 680px;
+/* Why Us */
+.why-us {
+  background-image: url(../img/background2.png);
 }
 
-/* Medium Size */
-@media (min-width: 768px) {
-  .header .head-text{
-    justify-content: flex-end;
+.why-us .detail,
+.why-us .img {
+  margin-top: 100px;
+}
+
+.why-us .detail h2 {
+  margin-top: 32px;
+  font-size: 32px;
+  color: #0f1837;
+}
+
+.why-us .detail .why {
+  margin-top: 40px;
+}
+
+.why-us h4 {
+  color: #0f1837;
+  background-color: #e7e5f9;
+  margin-right: 24px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 22px;
+}
+
+.why-us .why p {
+  line-height: 170%;
+}
+
+.why-us .num {
+  margin-top: 100px;
+}
+
+.why-us .num h3 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #0f1837;
+}
+
+.why-us .num p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #8a8c97;
+}
+
+/* Love This */
+.love .title {
+  margin-top: 100px;
+}
+
+.love .title h2 {
+  font-size: 32px;
+  color: #0f1837;
+}
+.love .title a p {
+  color: #9094a2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.love .judul h5 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #132039;
+}
+
+.love .judul p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #898889;
+}
+
+.love .harga h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: right;
+  color: #0a9f82;
+}
+
+.login .log {
+  margin-top: 100px;
+  background-color: #0f1837;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.login .full-name p,
+.login .email p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.login .full-name h4,
+.login .email h4 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #020b2a;
+  background: #ffffff;
+  padding: 1em 1.5em;
+  border-radius: 6px;
+}
+
+.login .log .btn a button {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #132039;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 6px;
+  background-color: #83d987;
+  width: 170px;
+  height: 70px;
+  transition: all 0.5s ease;
+}
+
+.login .log .btn a button:hover {
+  opacity: 0.8;
+}
+
+/* Footer */
+footer {
+  margin-top: 120px;
+  width: 100%;
+  background-color: #f5f6f8;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: #8a8c97;
+}
+
+/* Large Desktop XL Size */
+@media (min-width: 992px) {
+  nav {
+    background: none;
   }
-  .header .img{
-    justify-content: flex-start;
+
+  nav .navbar-nav a {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  nav .navbar-nav {
+    margin-left: 1.5rem;
+  }
+
+  nav .navbar-nav a.active {
+    margin-left: 32px;
+  }
+
+  .header {
+    margin-top: -120px;
+    margin-left: -40px;
+  }
+
+  .header .img img {
+    width: 520px;
+    height: 680px;
+  }
+  .header h5 {
+    width: 230px;
+  }
+}
+
+/* Large LG Size */
+@media (max-width: 992px) {
+  .header .info {
+    margin-top: 24px;
+  }
+  .header .img img {
+    margin-left: 160px;
+    width: 400px;
+    height: 500px;
+    margin-top: -80px;
+  }
+  .header .head-text h1 {
+    margin-top: 1.5em;
+  }
+  .header h5 {
+    width: 230px;
+  }
+  .why-us {
+    margin: auto;
+  }
+  .why-us .detail {
+    margin-top: 32px;
+  }
+  .login .log {
+    flex-direction: column;
+  }
+}
+
+/* Medium MD Size */
+@media (max-width: 768px) {
+  .header .info {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+  }
+  .header .head-text h1 {
+    font-size: 40px;
+  }
+  .why-us .num {
+    margin-top: 40px;
+  }
+  .love .title {
+    flex-direction: column;
+  }
+  .love .title p {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .head-text p {
+    text-align: center;
+  }
+  .header .info {
+    margin: 40px auto;
+  }
+  .header .img img {
+    width: 100%;
+  }
+  .header .head-text h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .header .info h1,
+  .header .info p {
+    text-align: left;
+  }
+  .why-us .img img {
+    width: 100%;
+    height: 100%;
   }
 }
