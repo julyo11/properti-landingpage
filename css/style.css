@@ -1,0 +1,154 @@
+body{
+  font-family: Poppins, 'sans-serif';
+  font-size: 16px;
+  height: 100vh;
+}
+/* 
+.navbar-nav a.nav-link.active{
+  color: #83d987;
+}
+
+.navbar-nav a.nav-link:hover {
+  color: #83d987;
+} */
+/* Navbar Style */
+nav{
+  z-index: 999;
+  background-color: #0F1837;
+}
+
+nav .nav-link{
+  color: #9094A2;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+nav .navbar-nav a{
+  padding: 1.5rem;
+}
+
+nav .navbar-nav{
+  padding: 0 2rem;
+}
+
+nav .navbar-nav .btn{
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+nav .navbar-nav .btn button{
+  outline: none;
+  border: none;
+  background-color: #83d987;
+  color: #132039;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 12px 32px 12px 32px;
+  transition: all 0.4s ease;
+}
+
+nav .navbar-nav .btn button:hover{
+  opacity: 0.7;
+}
+
+/* Header Style */
+.header{
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 0px;
+}
+
+.header .head-text h1{
+  margin-top: 4.5em;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.header .head-text p{
+  color: #9094A2;
+  margin-top: 24px;
+}
+
+.header .img{
+  margin-top: 5em;
+  margin-left: -185px;
+}
+
+.header .info{
+  margin-top: 64px;
+  z-index: 999;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 8px 0;
+}
+
+.header .info .location p, 
+.header .info .type p{
+  font-size: 14px;
+  color: #020B2A;
+  border-radius: 6px;
+}
+
+.header .info .location h5,
+.header .info .type h5{
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #F7F7F9;
+  border-radius: 6px;
+  width: 230px;
+  height: 45px;
+  color: #020b2a;
+  padding: 12px;
+}
+
+.header .info .btn-explore button{
+  border: none;
+  color: #132039;
+  font-size: 18px;
+  padding: 1.4em;
+  margin-top: 1em;
+  background-color: #83d987;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.5s ease;
+}
+.header .info .btn-explore button:hover{
+  opacity: 0.8;
+}
+
+/* Desktop LG Size */
+@media (min-width: 993px){
+  nav{
+    background: none;
+  }
+  nav .navbar-nav a{
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  nav .navbar-nav{
+    margin-left: 1.5rem;
+  }
+  nav .navbar-nav a.active{
+    margin-left: 32px;
+  }
+  .header{
+    margin-top: -120px;
+  }
+  .header .img img{
+    width: 520px;
+    height: 680px;
+}
+
+/* Medium Size */
+@media (min-width: 768px) {
+  .header .head-text{
+    justify-content: flex-end;
+  }
+  .header .img{
+    justify-content: flex-start;
+  }
+}
